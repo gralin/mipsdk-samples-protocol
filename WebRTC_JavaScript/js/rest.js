@@ -14,7 +14,7 @@ async function start() {
 
 async function initiateWebRTCSession() {
     try {
-        let body = { deviceId: deviceId, resolution: "notInUse" };
+        let body = { cameraId: deviceId, resolution: "notInUse" };
 
         if (streamId)
             body.streamId = streamId;
